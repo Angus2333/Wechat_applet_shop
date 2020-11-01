@@ -1,0 +1,63 @@
+{
+    "pages": [
+        "pages/index/index",
+        "pages/category/category",
+        "pages/goods_list/goods_list",
+        "pages/goods_detail/goods_detail",
+        "pages/cart/cart",
+        "pages/collect/collect",
+        "pages/order/order",
+        "pages/search/search",
+        "pages/user/user",
+        "pages/feedback/feedback",
+        "pages/login/login",
+        "pages/auth/auth",
+        "pages/pay/pay",
+        "pages/messages/messages"
+    ],
+    "window": {
+        "backgroundColor": "#ff3300",
+        "backgroundTextStyle": "light",
+        "navigationBarBackgroundColor": "#ff5100",
+        "navigationBarTitleText": "淘宝",
+        "navigationBarTextStyle": "white"
+    },
+    "tabBar": {
+        "color": "#999",
+        "selectedColor": "#ff5100",
+        "backgroundColor": "#fafafa",
+        "list": [{
+                "pagePath": "pages/index/index",
+                "text": "首页",
+                "iconPath": "icons/home.png",
+                "selectedIconPath": "icons/home_selected.png"
+            },
+            {
+                "pagePath": "pages/category/category",
+                "text": "分类",
+                "iconPath": "icons/fenlei.png",
+                "selectedIconPath": "icons/fenlei_selected.png"
+            },
+            {
+                "pagePath": "pages/messages/messages",
+                "text": "消息",
+                "iconPath": "icons/messages.png",
+                "selectedIconPath": "icons/messages_selected.png"
+            },
+            {
+                "pagePath": "pages/cart/cart",
+                "text": "购物车",
+                "iconPath": "icons/shopcar.png",
+                "selectedIconPath": "icons/shopcar_selected.png"
+            },
+            {
+                "pagePath": "pages/user/user",
+                "text": "我的",
+                "iconPath": "icons/my.png",
+                "selectedIconPath": "icons/my_selected.png"
+            }
+        ]
+    },
+    "sitemapLocation": "sitemap.json",
+    "style": "v2"
+}
