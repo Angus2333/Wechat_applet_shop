@@ -1,0 +1,7 @@
+<view class="container">
+  <view class="icons" wx:key="index" wx:for="{{icons}}" class="icons">
+     <image src="{{item.src}}" mode="widthFix">
+     </image>
+     <text class="title">xx</text>
+  </view>
+</view>

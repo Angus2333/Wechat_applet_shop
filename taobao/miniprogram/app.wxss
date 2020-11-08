@@ -22,7 +22,12 @@ navigator {
 
 page {
     /* 定义主题颜色 */
-    --themColor: #ff5100;
+    --themeColor: #ff5100;
     /* 定义统一的字体大小 */
     font-size: 28rpx;
+    --currentColor: #ff5100;
+}
+
+image {
+    width: 100%;
 }

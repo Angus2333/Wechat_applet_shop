@@ -1,0 +1,21 @@
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    flex: 25%;
+}
+
+.icons {
+    width: 20%;
+    padding: 20rpx;
+    box-sizing: border-box;
+}
+
+.icons image {
+    width: 100%;
+}
+
+text {
+    display: block;
+    width: 100%;
+    text-align: center;
+}
