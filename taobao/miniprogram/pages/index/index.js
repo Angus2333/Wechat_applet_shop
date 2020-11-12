@@ -24,7 +24,7 @@ Page({
     },
     //获取楼层数据
     getFloorList() {
-        request({ url: 'https://api-hmugo-web.itheima.net/api/public/v1/home/floordata' })
+        request({ url: '/home/floordata' })
             .then(result => {
                 // console.log(result);
                 this.setData({

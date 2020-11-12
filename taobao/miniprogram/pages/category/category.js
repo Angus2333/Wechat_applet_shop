@@ -11,7 +11,9 @@ Page({
         //右侧的商品数据
         rightContent: [],
         //被点击的左侧的菜单
-        currentIndex: 0
+        currentIndex: 0,
+        //右侧内容的滚动条距离顶部的距离
+        scrollTop: 0
 
     },
     //接口的返回数据
@@ -21,6 +23,7 @@ Page({
      * 生命周期函数--监听页面加载
      */
     onLoad: function(options) {
+
         /* 
         1.判断是否有旧的数据，
         旧数据规定他长这个样子{time:Date.now(),data:[...]}
@@ -54,7 +57,7 @@ Page({
     //获取分类数据
     getCates() {
         request({
-                url: 'https://api-hmugo-web.itheima.net/api/public/v1/categories',
+                url: '/categories',
             })
             .then(res => {
                 // console.log(res);
@@ -81,7 +84,9 @@ Page({
         let rightContent = this.Cates[index].children
         this.setData({
             currentIndex: index,
-            rightContent
+            rightContent,
+            scrollTop: 0 //重新设置右侧内容 scroll-view 的顶部距离
+
         })
 
     }
