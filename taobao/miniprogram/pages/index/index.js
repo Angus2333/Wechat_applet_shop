@@ -7,10 +7,10 @@ Page({
     data: {
         //轮播图数据
         swiperList: [
-            { src: 'https://ae04.alicdn.com/kf/Haeb59b8ffa354424bdc28790e7dc4af5r.jpg' },
-            { src: 'https://sc03.alicdn.com/kf/H08711de0d7554f1da08e03652a23e132X.jpg' },
-            { src: 'https://ae02.alicdn.com/kf/H810d161ff5594b868dfe9242b6efbd6bi.jpg' },
-            { src: 'https://ae02.alicdn.com/kf/H7509df3c443d49e3a2e411db181f3800y.jpg' }
+            { src: 'https://img.alicdn.com/tfs/TB1ZkoLukCWBuNjy0FaXXXUlXXa-966-644.jpg_620x10000q100.jpg_.webp' },
+            { src: 'https://img.alicdn.com/tps/i4/TB1grssmlr0gK0jSZFnSuvRRXXa.jpg_620x10000q100.jpg_.webp' },
+            { src: 'https://aecpm.alicdn.com/simba/img/TB1W4nPJFXXXXbSXpXXSutbFXXX.jpg' },
+            { src: 'https://aecpm.alicdn.com/simba/img/TB1_JXrLVXXXXbZXVXXSutbFXXX.jpg' }
         ],
         //楼层数据
         floorList: []

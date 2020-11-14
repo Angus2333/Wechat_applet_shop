@@ -58,6 +58,30 @@ Page({
     },
     //加入购车
     handleCartAdd() {
-        console.log('cec');
+        // console.log('cec');
+        //1.获取缓存中的购物车数组
+        let cart = wx.getStorageSync("cart") || [];
+        //2.判断商品对象是否存在数组中
+        let index = cart.findIndex(v => v.goods_id === this.GoodsInfo.goods_id)
+        if (index == -1) {
+            //不存在
+            this.GoodsInfo.num = 1;
+            cart.push(this.GoodsInfo)
+        } else {
+            //已经存在购物车
+            cart[index].num++;
+        }
+        //3.把购物车重新添加回缓存中
+        wx.setStorageSync('cart', cart)
+            //4.弹窗提示
+        wx.showToast({
+            title: '加入购物车成功', // 内容
+            icon: 'success',
+            //防止用户手抖，点击了其他按钮或者一直点加入
+            mask: 'true',
+            success: (res) => {
+
+            }
+        });
     }
 })
