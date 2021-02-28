@@ -1,0 +1,40 @@
+/* pages/search/search.wxss */
+
+@import '../../iconfont.wxss';
+.header {
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 0 15rpx;
+    background-color: #fff;
+    z-index: 2;
+}
+
+.search {
+    display: inline-block;
+    flex: 9;
+}
+
+.fabu {
+    flex: 1;
+    padding: 12rpx 0;
+    z-index: 5;
+}
+
+.fabu image {
+    width: 90%;
+}
+
+.blog-list {
+    margin-top: 20rpx;
+}
+
+.blog-panel {
+    margin-bottom: 20rpx;
+    box-sizing: border-box;
+}

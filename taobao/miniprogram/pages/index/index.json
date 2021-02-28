@@ -1,6 +1,0 @@
-{
-    "usingComponents": {
-        "searchInput": "../../components/searchInput/searchInput",
-        "icons": "../../components/icons/icons"
-    }
-}

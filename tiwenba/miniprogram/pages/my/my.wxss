@@ -1,0 +1,87 @@
+/* pages/my/my.wxss */
+page {
+  background-color: #dbdbdb;
+}
+
+.user_info_wrap {
+  height: 40vh;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.user_info_wrap .user_img_wrap {
+  position: relative;
+}
+
+.user_info_wrap .user_img_wrap .user_bg {
+  height: 40vh;
+  width: 100%;
+  filter: blur(10rpx);
+}
+
+.user_info_wrap .user_img_wrap .user_info {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 20%;
+  text-align: center;
+}
+
+.user_info_wrap .user_img_wrap .user_info .user_icon {
+  width: 150rpx;
+  height: 150rpx;
+  border-radius: 50%;
+}
+
+.user_info_wrap .user_img_wrap .user_info .user_name {
+  color: #fff;
+  margin-top: 40rpx;
+}
+
+.user_info_wrap .user_btn {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 40%;
+  border: 1rpx solid skyblue;
+  color: skyblue;
+  font-size: 38rpx;
+  padding: 30rpx;
+  border-radius: 10rpx;
+}
+.my_info{
+  margin: 30rpx 20rpx;
+  display: flex;
+  background-color:white!important;
+  border-radius: 10rpx;
+}
+.my_infoItem{
+  padding: 15rpx;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.itemNum{
+  margin: 10rpx;
+}
+.itemTitle{
+  margin: 10rpx;
+}
+.icons{
+  background-color: #fff;
+  border-radius: 10rpx;
+  margin: 20rpx 20rpx;
+  padding: 10rpx;
+}
+.iconsTitle{
+  font-weight: 600;
+}
+.icons_img{
+  width: 100%;
+}
+.icons_img image{
+  width: 100%;
+}

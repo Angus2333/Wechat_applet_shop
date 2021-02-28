@@ -1,0 +1,29 @@
+<view class="container">
+  <textarea 
+    class="content"
+    placeholder="请描述你的问题...."
+    bindinput="onInput"
+    maxlength="200"
+    auto-focus="{{true}}"
+    bindfocus="onFocus"
+    bindblur="onBlur"
+    >
+  </textarea>  
+  <view class="image-list">
+<!-- 显示图片 -->
+<block wx:for="{{images}}" wx:key="*this">
+   <view class="image-wrap">
+      <image src="{{item}}" class="image" data-imgsrc="{{item}}" mode="aspectFill" bind:tap="onPreviewImage"> </image>
+      <i class="iconfont icon-del2" bindtap="onDelImage" data-index="{{index}}"></i>
+   </view>
+</block>
+<!-- 选择图片 -->
+    <view class="image-wrap selectphoto" hidden="{{!selectPhoto}}" bindtap="onChangeImage">
+      <i class="iconfont icon-hao"></i>
+    </view>
+  </view>
+</view>
+<view class="footer" style="bottom:{{footerBottom}}px">
+  <text class="words-num">{{wordsNum}} </text>
+  <button class="send-btn" bind:tap="send">发布</button>
+</view>

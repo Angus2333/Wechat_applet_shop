@@ -1,0 +1,30 @@
+<view class="ctrl">
+   <view class="ctrl-item ctrl-dianzan">
+    <i class="iconfont icon-zan2 icon"></i>
+    <text>点赞</text>
+  </view>
+  <view class="ctrl-item" bind:tap="onComment">
+    <i class="iconfont icon-comment-copy icon"></i>
+    <text>评论</text>
+  </view>
+  <view class="ctrl-item share">
+    <button open-type="share" data-blogid="{{blogId}}" data-blog="{{blog}}" class="share-btn" hover-class="share-hover">
+      <i class="iconfont icon-forward1 icon"></i>
+      <text>分享</text>
+    </button>
+  </view>
+</view>
+
+<x-login 
+  modelShow="{{loginShow}}"
+  bind:loginsuccess="onLoginsucess"
+  bind:loginfail="onLoginfail"
+>
+</x-login>
+
+<x-bottom-model modelShow="{{bottomModalShow}}">
+ <form slot="model-content" report-submit="true" bind:submit="onSend">
+    <textarea name="content" class="comment-content" placeholder="写评论" value="{{content}}" fixed="true"></textarea>
+    <button class="send" form-type="submit">发送</button>
+  </form>
+</x-bottom-model>

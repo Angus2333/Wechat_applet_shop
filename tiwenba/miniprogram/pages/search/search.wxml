@@ -1,0 +1,34 @@
+<view style="width:100%;height:80rpx">
+  
+</view>
+<!-- 搜素框开始 -->
+  <view class="header">
+    <view class="fabu" bind:tap="onPublish">
+      <image class="" src="../../images/fabu.png" mode="widthFix">
+      </image>
+    </view>
+    <view class="search"> 
+      <x-search-blog bind:search="onSearch"></x-search-blog>
+    </view>
+   
+  </view>
+<!-- 搜索框结束 -->
+<!-- 博客卡片列表开始 -->
+<view class="blog-list">
+  <block wx:for="{{blogList}}" wx:key="_id">
+      <view class="blog-panel" >
+        <x-blog-card blog="{{item}}" bind:tap="goComment" data-blogid="{{item._id}}"></x-blog-card>
+        <x-blog-ctrl blogId="{{item._id}}"></x-blog-ctrl>
+      </view>
+  </block>
+</view>
+
+
+<!-- 博客卡片列表结束 -->
+<!-- 底部弹框开始 -->
+<x-login 
+  modelShow="{{modelShow}}" 
+  bind:loginsuccess="onLoginSuccess"
+  bind:loginfail="onLoginFail">
+</x-login>
+<!-- 底部弹框结束 -->
